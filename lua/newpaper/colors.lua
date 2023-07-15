@@ -202,7 +202,7 @@ function M.setup(config)
 
             -- Default fg and bg
             fg                   = "#C6C8CD", -- color15
-            bg                   = "#303030", -- color07
+            bg                   = "#1A1A1A", -- color07
 
             -- Other colors
             dark_maroon          = "#A64C4C",

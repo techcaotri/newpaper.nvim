@@ -257,7 +257,7 @@ function M.setup(configColors, configStyle)
             ["@type"]                                  = { fg = newpaper.darkengreen },                            -- For types.
             ["@type.builtin"]                          = { fg = newpaper.bluegreen, style = style.k_style },       -- For builtin types.
             ["@type.definition"]                       = { fg = newpaper.maroon },
-            ["@type.qualifier"]                        = { fg = newpaper.maroon, style = style.k_style },
+            ["@type.qualifier"]                        = { fg = newpaper.keyword, style = style.k_style },
             ["@variable"]                              = { fg = newpaper.variable, style = style.v_style },        -- Any variable name that does not have another highlight.
             ["@variable.builtin"]                      = { fg = newpaper.olive, style = style.v_style },           -- Variable names that are defined by the languages, like `this` or `self`.
             ["@variable.global"]                       = { fg = newpaper.green, style = style.k_style },
@@ -322,7 +322,7 @@ function M.setup(configColors, configStyle)
             ["@lsp.typemod.string.injected"]           = { link = "@string" },
             ["@lsp.typemod.type.defaultLibrary"]       = { link = "@type.builtin" },
             ["@lsp.typemod.variable.defaultLibrary"]   = { link = "@namespace.builtin" },
-            ["@lsp.typemod.variable.definition"]       = { link = "@variable.builtin" },
+            ["@lsp.typemod.variable.definition"]       = { link = "@variable" },
             ["@lsp.typemod.variable.injected"]         = { link = "@variable" },
 
             -- Treesitter plugins
