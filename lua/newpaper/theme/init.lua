@@ -194,15 +194,15 @@ function M.setup(configColors, configStyle)
             ["@constant.macro"]                        = { fg = newpaper.maroon, nocombine = true },               -- For constants that are defined by macros: `NULL` in C.
             ["@constructor"]                           = { fg = newpaper.lua_blue, style = style.br_style },       -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
             ["@debug"]                                 = { fg = newpaper.red },
-            ["@define"]                                = { fg = newpaper.magenta },
+            ["@define"]                                = { fg = newpaper.tex_SI_magenta },
             ["@error"]                                 = { fg = newpaper.errormsg_fg, bg = newpaper.errormsg_bg }, -- For syntax/parser errors.
             ["@exception"]                             = { fg = newpaper.redorange, style = style.k_style },       -- For exception related keywords.
             ["@field"]                                 = { fg = newpaper.ocean },                                  -- For fields.
-            ["@float"]                                 = { fg = newpaper.magenta },                                -- For floats.
+            ["@float"]                                 = { fg = newpaper.tex_SI_magenta },                                -- For floats.
             ["@function"]                              = { fg = newpaper.lua_navy, style = style.f_style },        -- For fuction definitions.
             ["@function.builtin"]                      = { fg = newpaper.tex_red, style = style.f_style },         -- For builtin functions: `table.insert` in Lua.
             ["@function.call"]                         = { fg = newpaper.lua_navy, style = style.f_style },        -- For fuction calls.
-            ["@function.macro"]                        = { fg = newpaper.magenta, style = style.f_style },         -- For macro defined fuctions (calls and definitions): each `macro_rules` in Rust.
+            ["@function.macro"]                        = { fg = newpaper.tex_SI_magenta, style = style.f_style },         -- For macro defined fuctions (calls and definitions): each `macro_rules` in Rust.
             ["@include"]                               = { fg = newpaper.maroon },                                 -- For includes: `#include` in C, `use` or `extern crate` in Rust, or `require` in Lua.
             ["@keyword"]                               = { fg = newpaper.keyword, style = style.k_style },         -- For keywords that don't fall in previous categories.
             ["@keyword.coroutine"]                     = { fg = newpaper.tex_keyword, style = style.k_style },     -- keywords related to coroutines (e.g. `go` in Go, `async/await` in Python).
@@ -222,7 +222,7 @@ function M.setup(configColors, configStyle)
             ["@property"]                              = { fg = newpaper.darkgreen },                              -- Same as `TSField`,accesing for struct members in C.
             ["@punctuation.bracket"]                   = { fg = newpaper.navy, style = style.br_style },           -- For brackets and parens.
             ["@punctuation.delimiter"]                 = { fg = newpaper.persimona, style = style.d_style },       -- For delimiters ie: `.`
-            ["@punctuation.special"]                   = { fg = newpaper.lightmagenta },                           -- For special punctutation that does not fall in the catagories before.
+            ["@punctuation.special"]                   = { fg = newpaper.tex_SI_magenta },                           -- For special punctutation that does not fall in the catagories before.
             ["@repeat"]                                = { fg = newpaper.keyword, style = style.k_style },         -- keywords related to loops.
             ["@storageclass"]                          = { fg = newpaper.lua_navy, style = style.k_style },
             ["@string"]                                = { fg = newpaper.string, style = style.s_style },          -- For strings.
@@ -421,7 +421,7 @@ function M.setup(configColors, configStyle)
             GlyphPalette4               = { fg = newpaper.blue },
             GlyphPalette6               = { fg = newpaper.teal },
             GlyphPalette7               = { fg = newpaper.aqua },
-            GlyphPalette9               = { fg = newpaper.magenta },
+            GlyphPalette9               = { fg = newpaper.lightmagenta },
             GlyphPaletteDirectory       = { fg = newpaper.navy },
 
             -- Headlines ------------------------------------------------------
